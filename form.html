@@ -1,0 +1,42 @@
+<form method="POST">
+
+     <div id="dynamicInput">
+
+          Entry 1<br><input type="text" id="myInputs[1]">
+
+     </div>
+
+     <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
+
+</form>
+
+<script type="text/javascript">
+        var counter = 1;
+
+
+    function addInput(divName){
+
+        
+
+              var newdiv = document.createElement('div');
+              var newbut = document.createElement('div');
+
+              newdiv.innerHTML = "Entry " + (counter + 1) + " <br><input type='text' id='myInputs["+(counter + 1)+"]'>";
+
+              newbut.innerHTML = "<input type='button' value='remove' onClick='removeInput(2);' id='"+(counter + 1)+"'' >";
+              document.getElementById(divName).appendChild(newdiv);
+              document.getElementById(divName).appendChild(newbut);
+
+              counter++;
+
+    }
+
+    function removeInput(id){
+        console.log('asd');
+        var rid = document.getElementById("myInputs["+id+"]");
+        var bid = document.getElementById(id);
+        rid.remove();
+        bid.remove();
+        counter--;
+    }
+</script>
