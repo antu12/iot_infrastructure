@@ -5,5 +5,6 @@
 	include "main/waas/index.php";
 	include "main/wfaas/index.php";
 
-	echo waas();
+	$json = json_encode(waas());
+	echo $json;
  ?>

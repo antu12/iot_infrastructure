@@ -1,0 +1,27 @@
+<div class="RegSpLeft" id="phone">
+        <input type="text" value="Phone">
+    </div>
+
+    <div class="RegSpRight">
+        <a href="#" class="pl">+
+        </a>
+        <br/>
+        <a href="#" class="mi">-
+        </a>
+    </div>
+
+<script type="text/javascript" src="dist/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('a.pl').click(function(e) {
+            e.preventDefault();
+            $('#phone').append('<input type="text" value="Phone">');
+        });
+        $('a.mi').click(function (e) {
+            e.preventDefault();
+            if ($('#phone input').length > 1) {
+                $('#phone').children().last().remove();
+            }
+        });
+    });
+    </script>
