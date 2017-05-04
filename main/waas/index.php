@@ -3,7 +3,7 @@ function waas(){
 		$result = array('service_id' => 'waas',
 				'service_elements' => array('taas',
 											'haas',
-											'waas',
+											'wfaas',
 											'aqaas'),
 				'token' => 'abcdef123',
 				'default' => array('taas' => 'http://40.77.60.97/taas',

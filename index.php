@@ -5,7 +5,7 @@
 	include "main/waas/index.php";
 	include "main/wfaas/index.php";
 
-	$json = json_encode(wfaas());
+	$json = json_encode(waas());
 	$url = "https://localhost/iot_infrastructure/curl.php";
 	function httpPost($data_string, $url)
 	{
