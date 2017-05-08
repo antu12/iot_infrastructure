@@ -7,8 +7,8 @@
 	$req;
 
 	//Service structure
-	$simple = array('service_id','token','value','expiration');
-	$complex = array('service_id', 'service_elements', 'token', 'default', 'expiration');
+	$simple = array('token','value','expiration');
+	$complex = array('service_elements', 'token', 'default', 'expiration');
 
 	//Check Service
 	$service = $services[rand(0, sizeof($services)-1)];
