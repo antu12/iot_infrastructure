@@ -1,1 +1,0 @@
-{"service_id":"aqaas","token":"abcdef123","value":{"NO2":"0.50ppb","SO2":"0.37ppb","O2":"0.48ppb"},"expiration":"3600"}
