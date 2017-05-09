@@ -1,0 +1,2 @@
+
+{"service_id":"wfaas","token":"abcdef123","value":{"direction":"north","speed":"25mph"},"expiration":"3600"}

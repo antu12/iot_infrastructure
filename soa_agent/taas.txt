@@ -1,0 +1,1 @@
+{"service_id":"taas","token":"abcdef123","value":"32c","expiration":"3600"}
