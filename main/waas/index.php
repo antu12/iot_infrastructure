@@ -14,5 +14,6 @@ function waas(){
 	return $result;
 }
 
+echo json_encode(waas());
 
 ?>

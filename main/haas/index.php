@@ -8,6 +8,6 @@
 		return $result;
 	}
 
-	
+	echo json_encode(haas());
 		
 ?>

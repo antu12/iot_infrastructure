@@ -8,5 +8,7 @@
 					 'expiration' => '3600');
 			return $result;
 	}
+
+	echo json_encode(wfaas());
 ?>
 

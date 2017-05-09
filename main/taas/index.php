@@ -7,6 +7,6 @@
 			return $result;
 		}
 
-		
+		echo json_encode(taas());
 
 ?>

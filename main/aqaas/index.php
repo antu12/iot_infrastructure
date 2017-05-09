@@ -9,6 +9,6 @@
 		return $result;
 	}
 
-	
+	echo json_encode(aqaas());
 
 ?>

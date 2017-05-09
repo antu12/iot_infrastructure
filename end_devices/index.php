@@ -1,5 +1,7 @@
 <?php 
-	
+	include '../httpPost.php';
+
+	$url = "https://localhost/iot_infrastructure/soa_agent/index.php";
 	//Services required
 	$services = array('aqaas', 'haas','taas', 'waas','wfaas' );
 	$simple_services = array('aqaas', 'haas','taas','wfaas' );
@@ -21,6 +23,12 @@
 	}
 	
 	
-	echo $req;
+	echo "REQ:".$req."<br>";
+
+
+	
+	echo "RES:".httpPost($req,$url);
+
+	
 
  ?>
